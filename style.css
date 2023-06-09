@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis s.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #B5B4F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+#cadastro {
+    position: absolute;
+    width: 80%;
+    min-width: 200px;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: -moz-linear-gradient(90deg, rgba(242, 219, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(90deg, rgba(242, 219, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(90deg, rgba(242, 219, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F2DBB8', GradientType=0);
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(90deg, rgba(242, 219, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(90deg, rgba(242, 219, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);  
+}
+
+#c-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-left img {
+    margin: 10px;
+    width: 100%;
+}
+
+#c-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 60px 60px;
+    float: right;
+    justify-content: space-evenly;
+}
+
+/* FORM TITLE */
+.form-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-title h1 {
+    font-size: 2.5em;
+    width: 70%;
+    border-bottom: 5px solid #6E61F7;
+    border-radius: 5px;
+}
+
+.btn-container {
+    width: 30%;
+    text-align: end;
+}
+
+#titlebtn {
+    background-color: #6E61F7;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* FORM TITLE */
+
+/* FORM INPUTS */
+.form-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-inputs label {
+    display: block;
+}
+
+.form-inputs .inpute {
+    width: 50%;
+}
+
+.form-inputs .inputd {
+    width: 50%;
+}
+
+.form-inputs input {
+    width: 90%;
+    height: 47px;
+    border: none;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    font-size: 1.0em;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+    outline: none;
+}
+
+.form-inputs label {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.inputs-separator {
+    margin-bottom: 30px;
+}
+
+/* FORM INPUTS */
+
+/* RADIO INPUTS */
+.radio-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.radio-inputs h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* RADIO INPUTS */
+
+.submit-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn {
+    background-color: #6E61F7;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    color: white;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+    #cadastro {
+        width: 50%;
+        background-color: white;
+    }
+
+    #c-right {
+        width: 100%;
+    }
+
+    #c-left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .form-title h1{
+        margin-bottom: 20px;
+    }
+    #cadastro {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        top: 40%;
+        background-color: white;
+    }
+
+    #c-right {
+        max-width: 50%;
+        min-width: 400px;
+        padding: 60px 0;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-inputs input {
+        width: 100%;
+    }
+
+    #cadastro {
+        height: auto;
+        margin: 10% 0;
+    }
+
+    .radio-inputs {
+        align-items: flex-start;
+        padding: 0 25%;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .radio-inputs h3 {
+        display: block;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .form-inputs .inpute {
+        width: 90%;
+    }
+
+    .form-inputs .inputd {
+        width: 90%;
+    }
+
+    .radio-inputs {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 720px){
+    #cadastro{
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .btn {
+        background-color: #6E61F7;
+        height: 30px;
+        width: 80%;
+        line-height: 30px;
+        color: white;
+        border-radius: 8px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 428px){
+    #cadastro{
+        margin-top: 100px;
+    }
+    .form-title {
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+        width: 55%;
+        justify-content: space-between;
+    }
+    
+    .form-title h1 {
+        font-size: 1.5em;
+        width: 70%;
+        border-bottom: 5px solid #6E61F7;
+        border-radius: 5px;
+    }
+    
+    .btn-container {
+        width: 30%;
+        text-align: end;
+    }
+    
+    #titlebtn {
+        background-color: #6E61F7;
+        color: white;
+        padding: 8px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+    
+    .form-inputs{
+        margin: 0 auto;
+    }
+    .form-inputs input {
+        width: 100%;
+        height: 47px;
+        border: none;
+        margin: 10px 0 0 0;
+        padding: 0 10px;
+        font-size: 1.0em;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+        -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+        box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.30);
+    }
+    
+    .form-inputs label {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    
+    .inputs-separator {
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+
+@media screen and (max-height: 900px){
+    #cadastro{
+        top: 400px;
+    }
+}
